@@ -1,0 +1,84 @@
+VAR-CONST-LET KEYWORDS
+
+1.Var: Can be redeclared & Updated
+Ex:
+var first="hey"
+var first="hello"
+console.log(first);
+
+output:hello
+
+
+2.Let: Can't be redeclared but can be Updated
+Ex:
+let first="hey"
+let first="hello"
+console.log(first);
+
+output: error
+
+Ex:
+let first="hey"
+first="hello"
+console.log(first);
+
+output: hello
+
+
+
+3.const:  can't be redeclared & updated also it must be definitely initialised with some value.
+Ex:
+const first="hello"
+const first="hey"
+console.log(first);
+
+output: error
+
+
+
+
+
+var have Global scope & Function scope
+let,const has block scope
+
+Ex:
+for(var i=0;i<5;i++)
+{
+console.log(i+" ");
+}
+console.log("outside loop value is:"+i);
+
+Output:
+0
+1
+2
+3
+4
+outside loop value is:5
+
+
+Ex:
+for(let i=0;i<5;i++)
+{
+console.log(i+" ");
+}
+console.log("outside loop value is:"+i);
+
+Output:
+0
+1
+2
+3
+4
+outside loop value is:error//cant be accessed outside of the loop
+
+Ex:
+for(const i=0;i<5;i++)
+{
+console.log(i+" ");
+}
+console.log("outside loop value is:"+i);
+
+Output:
+0
+outside loop value is:Type Error//when i changes from 0 to 1 this error appears coz its a constant it cant be changed or updated
