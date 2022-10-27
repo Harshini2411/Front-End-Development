@@ -1,4 +1,3 @@
 
-=======
 Completed Challenges in JavaScript.
-=======
+
