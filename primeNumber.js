@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function primeNumber(num) {
  let isPrime=true;
  if(num==1)
@@ -26,3 +27,33 @@ console.log(`${num} is not a primenumber`);
   }
  }
 primeNumber(509);
+=======
+function primeNumber(num) {
+ let isPrime=true;
+ if(num==1)
+ {
+  console.log("1 is neither prime nor composite number");
+ }
+ else if(num>1){
+ for(i=2;i*i<=num;i++)
+ {
+  if(num%i==0)
+  {
+   isPrime=false;
+   break;
+  }
+ }
+  if(isPrime)
+  {
+   console.log(`${num} is  a primenumber`);
+  }
+  else{
+console.log(`${num} is not a primenumber`);
+  }
+ }
+  else {
+  console.log("It is not a primeNumber");
+  }
+ }
+primeNumber(509);
+>>>>>>> 15e2a3739786944ea938dc303d0a8cf0023ed928
